@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pilihan Program Belajar & Simulasi CBT Ujian TKA SMP/MTs 2027 - JIA Learning</title>
   <meta name="description" content="Pilihan program bimbingan belajar TKA SMP/MTs 2027. Dari belajar mandiri, simulasi CBT, hingga mentoring intensif bersama mentor juara nasional.">
-  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -95,6 +95,99 @@
         <button class="filter-tab" data-filter="mentoring">Intensif Mentoring</button>
         <button class="filter-tab" data-filter="buku">Buku & Modul Cetak</button>
       </div>
+
+      <!-- Program Package Cards (Filterable & Mobile Swipeable) -->
+      <div class="swipe-hint"><span>👉</span> Geser ke samping untuk lihat 4 paket pilihan</div>
+      <div class="program-cards-grid">
+        <!-- Card 1: Mandiri -->
+        <div class="program-pkg-card" data-group="program-cards" data-category="mandiri">
+          <div>
+            <div class="pkg-top-tag">BELAJAR MANDIRI</div>
+            <h3 class="pkg-title">TKA Starter Class</h3>
+            <p class="pkg-desc">Cocok untuk siswa mandiri yang ingin belajar sesuai ritme sendiri dengan materi terarah.</p>
+            <div class="pkg-price-wrap">
+              <div class="pkg-price-old">Rp 399.000</div>
+              <div class="pkg-price-current">Rp 249.000 <span class="pkg-price-period">/ paket</span></div>
+            </div>
+            <ul class="pkg-features-list">
+              <li class="pkg-feature-item"><span class="check-icon">✓</span> <span>100+ Video Materi Konseptual</span></li>
+              <li class="pkg-feature-item"><span class="check-icon">✓</span> <span>E-Planner Sukses Mandiri TKA</span></li>
+              <li class="pkg-feature-item"><span class="check-icon">✓</span> <span>Bank 1.500+ Latihan Soal HOTS</span></li>
+              <li class="pkg-feature-item"><span class="check-icon">✓</span> <span>Akses Platform Belajar 12 Bulan</span></li>
+            </ul>
+          </div>
+          <a href="https://wa.me/6281234567890?text=Halo%20Admin%20JIA%2C%20saya%20ingin%20daftar%20Paket%20Starter%20Class" target="_blank" class="btn btn-secondary pkg-action-btn">
+            Pilih Paket Mandiri &rsaquo;
+          </a>
+        </div>
+
+        <!-- Card 2: CBT Online (Popular) -->
+        <div class="program-pkg-card popular" data-group="program-cards" data-category="cbt">
+          <div class="pkg-popular-badge">⭐ PALING DIMINATI</div>
+          <div>
+            <div class="pkg-top-tag">SIMULASI CBT ADAPTIF</div>
+            <h3 class="pkg-title">CBT Pro Target SMA</h3>
+            <p class="pkg-desc">Simulasi CBT 100% mirip antarmuka tes seleksi asli dengan analisis kelemahan mendalam.</p>
+            <div class="pkg-price-wrap" style="background: #FFF7EA; border-color: var(--color-accent-border);">
+              <div class="pkg-price-old">Rp 699.000</div>
+              <div class="pkg-price-current" style="color: #B45309;">Rp 449.000 <span class="pkg-price-period">/ paket</span></div>
+            </div>
+            <ul class="pkg-features-list">
+              <li class="pkg-feature-item"><span class="check-icon">✓</span> <span>12x Try Out Real Computer Based Test</span></li>
+              <li class="pkg-feature-item"><span class="check-icon">✓</span> <span>Sistem Waktu & Timer Adaptif 90 Detik</span></li>
+              <li class="pkg-feature-item"><span class="check-icon">✓</span> <span>Ranking Nasional & Peluang Masuk SMA</span></li>
+              <li class="pkg-feature-item"><span class="check-icon">✓</span> <span>Pembahasan Video QR Tiap Butir Soal</span></li>
+            </ul>
+          </div>
+          <a href="https://wa.me/6281234567890?text=Halo%20Admin%20JIA%2C%20saya%20ingin%20daftar%20Paket%20CBT%20Pro" target="_blank" class="btn btn-primary pkg-action-btn">
+            Daftar CBT Pro &rsaquo;
+          </a>
+        </div>
+
+        <!-- Card 3: Mentoring VIP -->
+        <div class="program-pkg-card" data-group="program-cards" data-category="mentoring">
+          <div>
+            <div class="pkg-top-tag">INTENSIF INTERAKTIF</div>
+            <h3 class="pkg-title">Master Class VIP</h3>
+            <p class="pkg-desc">Pendampingan penuh mentor juara nasional dari pemahaman konsep hingga hari ujian.</p>
+            <div class="pkg-price-wrap">
+              <div class="pkg-price-old">Rp 1.499.000</div>
+              <div class="pkg-price-current">Rp 899.000 <span class="pkg-price-period">/ program</span></div>
+            </div>
+            <ul class="pkg-features-list">
+              <li class="pkg-feature-item"><span class="check-icon">✓</span> <span>40+ Sesi Kelas Live Streaming Interaktif</span></li>
+              <li class="pkg-feature-item"><span class="check-icon">✓</span> <span>Tanya PR/Soal 24/7 di Grup VIP Mentor</span></li>
+              <li class="pkg-feature-item"><span class="check-icon">✓</span> <span>Termasuk Semua Akses 12x Try Out CBT</span></li>
+              <li class="pkg-feature-item"><span class="check-icon">✓</span> <span>Bonus Buku Amazing TKA Dikirim ke Rumah</span></li>
+            </ul>
+          </div>
+          <a href="https://wa.me/6281234567890?text=Halo%20Admin%20JIA%2C%20saya%20ingin%20daftar%20Master%20Class%20VIP" target="_blank" class="btn btn-dark pkg-action-btn">
+            Gabung Master Class &rsaquo;
+          </a>
+        </div>
+
+        <!-- Card 4: Buku Cetak -->
+        <div class="program-pkg-card" data-group="program-cards" data-category="buku">
+          <div>
+            <div class="pkg-top-tag">BUKU FISIK RESMI</div>
+            <h3 class="pkg-title">Buku Amazing TKA</h3>
+            <p class="pkg-desc">Modul cetak fisik 500+ halaman dengan ringkasan rumus esensial dan latihan HOTS.</p>
+            <div class="pkg-price-wrap">
+              <div class="pkg-price-old">Rp 285.000</div>
+              <div class="pkg-price-current">Rp 185.000 <span class="pkg-price-period">/ buku</span></div>
+            </div>
+            <ul class="pkg-features-list">
+              <li class="pkg-feature-item"><span class="check-icon">✓</span> <span>Buku Fisik Kertas Bookpaper 500+ Hal</span></li>
+              <li class="pkg-feature-item"><span class="check-icon">✓</span> <span>Video Bedah Konsep via Scan Barcode</span></li>
+              <li class="pkg-feature-item"><span class="check-icon">✓</span> <span>Free Akun CBT Ujian Online 1 Tahun</span></li>
+              <li class="pkg-feature-item"><span class="check-icon">✓</span> <span>Packing Aman Dikirim ke Seluruh RI</span></li>
+            </ul>
+          </div>
+          <a href="https://wa.me/6281234567890?text=Halo%20Admin%20JIA%2C%20saya%20ingin%20pesan%20buku%20Amazing%20TKA" target="_blank" class="btn btn-secondary pkg-action-btn">
+            Pesan Buku Fisik &rsaquo;
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -108,6 +201,7 @@
         </p>
       </div>
 
+      <div class="swipe-hint"><span>👉</span> Geser ke samping untuk 3 pilar</div>
       <div class="pilar-cards-grid">
         <!-- Pillar 01 -->
         <div class="pilar-card" style="position: relative;">
@@ -207,6 +301,7 @@
         </p>
       </div>
 
+      <div class="swipe-hint"><span>👉</span> Geser ke samping untuk tahapan 12 minggu</div>
       <div class="roadmap-grid">
         <!-- Phase 1 -->
         <div class="roadmap-card">
@@ -441,6 +536,19 @@
     <a href="faq.html" class="dock-link">5. FAQ</a>
   </div>
 
-  <script src="script.js"></script>
+  <!-- Floating Mobile Action Bar -->
+  <div class="mobile-bottom-bar" id="mobileBottomBar">
+    <div class="mobile-bottom-inner">
+      <div class="mobile-bottom-info">
+        <span class="mobile-bottom-badge">PILIHAN PROGRAM 2027</span>
+        <span class="mobile-bottom-title">Konsultasi Paket Belajar</span>
+      </div>
+      <a href="https://wa.me/6281234567890?text=Halo%20Admin%20JIA%2C%20saya%20ingin%20konsultasi%20pemilihan%20paket%20belajar" target="_blank" class="btn btn-primary mobile-bottom-cta">
+        Hubungi Kami &rsaquo;
+      </a>
+    </div>
+  </div>
+
+ <script src="script.js"></script>
 </body>
 </html>
