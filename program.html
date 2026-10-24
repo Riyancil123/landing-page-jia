@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pilihan Program Belajar & Simulasi CBT Ujian TKA SMP/MTs 2027 - JIA Learning</title>
+  <meta name="description" content="Pilihan program bimbingan belajar TKA SMP/MTs 2027. Dari belajar mandiri, simulasi CBT, hingga mentoring intensif bersama mentor juara nasional.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">J</div>
+        <div class="brand-text-wrap">
+          <div class="brand-title">JIA <span>Learning</span></div>
+          <div class="brand-subtitle">Bimbingan Belajar TKA SMP/MTs</div>
+        </div>
+      </a>
+
+      <!-- Floating Nav Pills -->
+      <nav class="nav-pill-container" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Beranda</a>
+        <a href="program.html" class="nav-link active">Program</a>
+        <a href="mentor.html" class="nav-link">Mentor</a>
+        <a href="testimoni.html" class="nav-link">Testimoni</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+      </nav>
+
+      <!-- Right Actions -->
+      <div class="header-actions">
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20JIA%2C%20saya%20tertarik%20dengan%20program%20TKA" target="_blank" class="btn btn-header-cta">
+          Daftar Sekarang &rsaquo;
+        </a>
+        <div class="user-avatar-btn" title="Akun Siswa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </div>
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Open Menu">☰</button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-menu-drawer" id="mobileDrawer">
+      <a href="index.html" class="mobile-nav-link">Beranda</a>
+      <a href="program.html" class="mobile-nav-link active">Program Belajar</a>
+      <a href="mentor.html" class="mobile-nav-link">Mentor Juara</a>
+      <a href="testimoni.html" class="mobile-nav-link">Testimoni Siswa & Orang Tua</a>
+      <a href="faq.html" class="mobile-nav-link">FAQ & Pusat Bantuan</a>
+      <a href="https://wa.me/6281234567890" class="btn btn-primary" style="margin-top: 10px;">Daftar Sekarang</a>
+    </div>
+  </header>
+
+  <!-- Program Hero Section -->
+  <section class="hero-section" style="padding-bottom: 40px;">
+    <div class="hero-glow-bg"></div>
+    <div class="container">
+      <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 30px; flex-wrap: wrap;">
+        <div style="max-width: 680px;">
+          <div class="badge-soft" style="margin-bottom: 16px;">
+            <span>⭐</span> KURIKULUM TERUPDATE TKA 2027
+          </div>
+          <h1 class="hero-title" style="margin-bottom: 16px;">
+            Pilihan Program Belajar &<br>
+            Simulasi CBT Ujian TKA<br>
+            SMP/MTs 2027
+          </h1>
+          <p class="hero-subtitle">
+            Pilih jalur persiapan terbaik yang sesuai dengan ritme belajarmu. Dari belajar mandiri terarah, paket modul cetak, hingga bimbingan intensif interaktif bersama mentor juara nasional.
+          </p>
+        </div>
+
+        <!-- Social Proof Floating Badge -->
+        <div style="background: #FFFFFF; border: 1px solid var(--color-card-border); border-radius: var(--radius-lg); padding: 18px 24px; box-shadow: var(--shadow-md); display: flex; align-items: center; gap: 14px; max-width: 320px;">
+          <div style="width: 44px; height: 44px; border-radius: 12px; background: #FFF7EA; color: #C05600; display: flex; align-items: center; justify-content: center; font-size: 1.4rem;">
+            🏆
+          </div>
+          <div>
+            <div style="font-size: 1.15rem; font-weight: 800; color: var(--color-primary); line-height: 1.1;">94.8% Lolos</div>
+            <div style="font-size: 0.74rem; color: var(--text-muted); margin-top: 2px;">Siswa binaan sukses masuk SMA Unggulan Target 2026</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filter Tabs Bar -->
+      <div class="filter-tabs-bar" data-target-group="program-cards">
+        <button class="filter-tab active" data-filter="all">Semua Program</button>
+        <button class="filter-tab" data-filter="mandiri">Paket Belajar Mandiri</button>
+        <button class="filter-tab" data-filter="cbt">Simulasi CBT Online</button>
+        <button class="filter-tab" data-filter="mentoring">Intensif Mentoring</button>
+        <button class="filter-tab" data-filter="buku">Buku & Modul Cetak</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Tiga pilar biar kamu siap TKA -->
+  <section class="section-pilar" style="padding-top: 20px;">
+    <div class="container">
+      <div class="section-header-center" style="margin-bottom: 40px;">
+        <h2 class="section-title">Tiga pilar biar kamu siap TKA</h2>
+        <p class="section-desc">
+          Pondasi materi dan strategi pengerjaan soal yang membuat ribuan siswa sukses menembus SMA impian.
+        </p>
+      </div>
+
+      <div class="pilar-cards-grid">
+        <!-- Pillar 01 -->
+        <div class="pilar-card" style="position: relative;">
+          <div style="position: absolute; right: 20px; top: 16px; font-family: var(--font-heading); font-size: 4.5rem; font-weight: 900; color: rgba(254, 166, 25, 0.15); line-height: 1; pointer-events: none;">
+            01
+          </div>
+          <div class="pilar-card-top">
+            <div class="pilar-icon-wrap" style="background: #FFE4E6; color: #E11D48;">🎯</div>
+          </div>
+          <div style="margin-top: 10px;">
+            <h3 class="pilar-title">Bedah Kisi-Kisi</h3>
+            <p class="pilar-desc">
+              Pemetaan mendalam terhadap seluruh subtes dan bab yang diujikan pada TKA SMP/MTs 2027.
+            </p>
+            <ul class="check-list" style="margin-bottom: 20px;">
+              <li class="check-item"><span class="check-icon">✓</span><span>Pola Soal Standar Nasional</span></li>
+              <li class="check-item"><span class="check-icon">✓</span><span>Bobot Skor per Subtes</span></li>
+              <li class="check-item"><span class="check-icon">✓</span><span>Indikator Kelulusan SMA Unggulan</span></li>
+            </ul>
+          </div>
+          <a href="#roadmap" class="pilar-link">
+            <span>Lihat Silabus Lengkap</span>
+            <span>↗</span>
+          </a>
+        </div>
+
+        <!-- Pillar 02 -->
+        <div class="pilar-card card-purple" style="position: relative;">
+          <div style="position: absolute; right: 20px; top: 16px; font-family: var(--font-heading); font-size: 4.5rem; font-weight: 900; color: rgba(79, 29, 105, 0.12); line-height: 1; pointer-events: none;">
+            02
+          </div>
+          <div class="pilar-card-top">
+            <div class="pilar-icon-wrap" style="background: #EFE4F5; color: var(--color-primary);">⏱️</div>
+          </div>
+          <div style="margin-top: 10px;">
+            <h3 class="pilar-title">Strategi Belajar</h3>
+            <p class="pilar-desc">
+              Bukan sekadar hafalan. Pelajari alur berpikir logis untuk menjawab soal HOTS dalam tempo 60-90 detik.
+            </p>
+            <ul class="check-list" style="margin-bottom: 20px;">
+              <li class="check-item"><span class="check-icon">✓</span><span>Rumus Logis & Cepat</span></li>
+              <li class="check-item"><span class="check-icon">✓</span><span>Eliminasi Jawaban Pengalih</span></li>
+              <li class="check-item"><span class="check-icon">✓</span><span>Manajemen Waktu Sesi Ujian</span></li>
+            </ul>
+          </div>
+          <a href="mentor.html" class="pilar-link">
+            <span>Pelajari Pola Belajar</span>
+            <span>↗</span>
+          </a>
+        </div>
+
+        <!-- Pillar 03 -->
+        <div class="pilar-card" style="position: relative;">
+          <div style="position: absolute; right: 20px; top: 16px; font-family: var(--font-heading); font-size: 4.5rem; font-weight: 900; color: rgba(254, 166, 25, 0.15); line-height: 1; pointer-events: none;">
+            03
+          </div>
+          <div class="pilar-card-top">
+            <div class="pilar-icon-wrap" style="background: #FEF3C7; color: #D97706;">📊</div>
+          </div>
+          <div style="margin-top: 10px;">
+            <h3 class="pilar-title">Uji Coba TKA</h3>
+            <p class="pilar-desc">
+              Simulasi real-time berkala menggunakan sistem CBT yang identik dengan sistem tes asli sekolah sasaran.
+            </p>
+            <div class="pilar-mini-chart">
+              <div class="chart-header">
+                <span>Skor Simulasi Berkala</span>
+                <span class="text-orange">Konsisten Meningkat</span>
+              </div>
+              <div class="chart-bars">
+                <div class="chart-bar" style="height: 30%;"></div>
+                <div class="chart-bar" style="height: 45%;"></div>
+                <div class="chart-bar" style="height: 55%;"></div>
+                <div class="chart-bar active" style="height: 72%;"></div>
+                <div class="chart-bar active" style="height: 85%;"></div>
+                <div class="chart-bar highlight" style="height: 96%;"></div>
+              </div>
+            </div>
+          </div>
+          <a href="index.html" class="pilar-link">
+            <span>Mulai Uji Coba Sekarang</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Roadmap Belajar 12 Minggu Terarah -->
+  <section class="section-pilar" id="roadmap" style="background: #FAF7F2; padding: 70px 0;">
+    <div class="container">
+      <div class="section-header-center">
+        <div class="section-tag">ALUR PERSIAPAN INTENSIF TKA</div>
+        <h2 class="section-title">Roadmap Belajar 12 Minggu Terarah</h2>
+        <p class="section-desc">
+          Tahapan terstruktur yang dirancang agar siswa tidak kewalahan dan siap tempur di hari pelaksanaan ujian.
+        </p>
+      </div>
+
+      <div class="roadmap-grid">
+        <!-- Phase 1 -->
+        <div class="roadmap-card">
+          <div class="roadmap-card-top">
+            <span class="badge-pill-tag purple">MINGGU 1 - 4</span>
+            <div class="roadmap-watermark">01</div>
+          </div>
+          <h3 class="roadmap-title">Pemetaan Kisi-Kisi & Konsep Esensial</h3>
+          <p class="roadmap-desc">
+            Fokus pada pembongkaran konsep dasar semua mata pelajaran yang diujikan dalam TKA.
+          </p>
+          <ul class="roadmap-checkpoints">
+            <li><span class="check-icon">✓</span> <span>Diagnostic Test & Pemetaan Kelemahan</span></li>
+            <li><span class="check-icon">✓</span> <span>Penguasaan 15 Materi Kunci Matematika</span></li>
+            <li><span class="check-icon">✓</span> <span>Pemahaman Konsep Sains & Penalaran</span></li>
+          </ul>
+          <div class="roadmap-meta">Durasi: 4 Minggu • 16x Sesi Pembelajaran</div>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="roadmap-card">
+          <div class="roadmap-card-top">
+            <span class="badge-pill-tag orange">MINGGU 5 - 8</span>
+            <div class="roadmap-watermark">02</div>
+          </div>
+          <h3 class="roadmap-title">Teknik Eliminasi & Bedah HOTS</h3>
+          <p class="roadmap-desc">
+            Mulai berlatih dengan soal berdaya pembeda tinggi dan melatih kecepatan pengerjaan.
+          </p>
+          <ul class="roadmap-checkpoints">
+            <li><span class="check-icon">✓</span> <span>Latihan Soal Level Menengah & Sulit</span></li>
+            <li><span class="check-icon">✓</span> <span>Metode Analisis Cepat 90 Detik</span></li>
+            <li><span class="check-icon">✓</span> <span>Trik Mengeliminasi Opsi Jawaban Jebakan</span></li>
+            <li><span class="check-icon">✓</span> <span>Sesi Mentoring Live & Q&A Mingguan</span></li>
+          </ul>
+          <div class="roadmap-meta">Durasi: 4 Minggu • 20x Sesi + 4x Mini Quiz</div>
+        </div>
+
+        <!-- Phase 3 -->
+        <div class="roadmap-card">
+          <div class="roadmap-card-top">
+            <span class="badge-pill-tag purple">MINGGU 9 - 12</span>
+            <div class="roadmap-watermark">03</div>
+          </div>
+          <h3 class="roadmap-title">Tryout Maraton CBT & Simulasi Riil</h3>
+          <p class="roadmap-desc">
+            Adaptasi kondisi riil ujian, pembiasaan antarmuka komputer, dan finalisasi mental juara.
+          </p>
+          <ul class="roadmap-checkpoints">
+            <li><span class="check-icon">✓</span> <span>6x Try Out Akbar CBT dengan Ranking Nasional</span></li>
+            <li><span class="check-icon">✓</span> <span>Laporan Rapor Analisis Nilai Instan</span></li>
+            <li><span class="check-icon">✓</span> <span>Prediksi Skor & Peluang Masuk SMA Favorit</span></li>
+            <li><span class="check-icon">✓</span> <span>Konsultasi Pemantapan Pilihan Sekolah</span></li>
+          </ul>
+          <div class="roadmap-meta">Durasi: 4 Minggu • 6x Tryout Full CBT + Review</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Buku Pendukung Persiapan TKA SMP/MTs 2027 -->
+  <section class="section-ekosistem">
+    <div class="container">
+      <div style="margin-bottom: 24px;">
+        <div class="section-tag">MODUL & BUKU CETAK</div>
+        <h2 class="section-title">Buku pendukung persiapan TKA SMP/MTs 2027.</h2>
+      </div>
+
+      <div class="book-showcase-box">
+        <div class="book-mockup-wrapper">
+          <img src="assets/images/book_amazing_tka.jpg" alt="Buku Amazing TKA SMP/MTs 2027">
+        </div>
+
+        <div class="book-showcase-info">
+          <div style="display: flex; gap: 8px;">
+            <span class="badge-pill-tag orange">BEST SELLER 2026/2027</span>
+            <span class="badge-pill-tag purple">EDISI REVISI TERBARU</span>
+          </div>
+
+          <h3 style="font-size: 2rem; font-weight: 800; color: var(--color-primary); line-height: 1.2;">
+            Amazing TKA SMP/MTs 2027
+          </h3>
+
+          <p style="font-size: 0.96rem; color: var(--text-muted); line-height: 1.65;">
+            Buku pendamping resmi pembelajaran bimbingan JIA. Berisi rangkuman materi lengkap, bedah konsep esensial, trik pengerjaan cepat soal HOTS, dan 1.200+ bank soal prediksi seleksi SMA Unggulan.
+          </p>
+
+          <ul class="check-list">
+            <li class="check-item">
+              <span class="check-icon">✓</span>
+              <span>Akses gratis akun simulasi ujian CBT selama 1 tahun penuh</span>
+            </li>
+            <li class="check-item">
+              <span class="check-icon">✓</span>
+              <span>Video pembahasan lengkap per nomor via scan QR code</span>
+            </li>
+            <li class="check-item">
+              <span class="check-icon">✓</span>
+              <span>Free konsultasi pemilihan jurusan & SMA favorit via grup belajar WA</span>
+            </li>
+          </ul>
+
+          <div style="margin-top: 10px;">
+            <a href="https://wa.me/6281234567890?text=Halo%20Admin%20JIA%2C%20saya%20ingin%20pesan%20buku%20Amazing%20TKA%202027" target="_blank" class="btn btn-dark" style="padding: 13px 28px; font-size: 0.95rem;">
+              Pesan Buku Sekarang (Diskon 35%) &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Banner: Masih Bingung Memilih Paket yang Tepat? -->
+      <div class="program-consult-banner">
+        <div class="program-consult-text">
+          <div style="font-size: 0.74rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-accent); margin-bottom: 6px;">
+            KONSULTASI GRATIS DENGAN KONSULTAN
+          </div>
+          <h2 class="program-consult-title">Masih Bingung Memilih Paket yang Tepat?</h2>
+          <p class="program-consult-sub">
+            Jangan ragu untuk konsultasi bersama tim konsultan pendidikan JIA. Kami akan bantu menganalisis kebutuhan belajar siswa agar mendapatkan rekomendasi paket yang paling efektif.
+          </p>
+          <div style="font-size: 0.8rem; opacity: 0.85;">
+            ✓ Konsultasi 100% Gratis • Tanpa komitmen apa pun
+          </div>
+        </div>
+
+        <div class="program-consult-actions">
+          <a href="https://wa.me/6281234567890?text=Halo%20Admin%20JIA%2C%20saya%20ingin%20konsultasi%20paket%20belajar" target="_blank" class="btn btn-primary" style="padding: 13px 26px;">
+            Pilih Jalur Persiapan TKA &rsaquo;
+          </a>
+          <a href="https://wa.me/6281234567890" target="_blank" class="btn btn-ghost-white">
+            Jadwalkan Tanya Admin
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer (Exact Match with Reference Image) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Col -->
+        <div class="footer-brand-col">
+          <div class="footer-logo-card">
+            <img src="assets/images/jia_logo.png" alt="JIA LEARNING">
+          </div>
+          <p class="footer-tagline">
+            Pendamping belajar yang serius untuk hasil TKA yang nyata.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://instagram.com/jialearning" target="_blank" class="footer-social-btn" title="Instagram">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://youtube.com/@jialearning" target="_blank" class="footer-social-btn" title="YouTube">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+            <a href="https://wa.me/6285196906349" target="_blank" class="footer-social-btn" title="WhatsApp">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </a>
+            <a href="mailto:azzam@jialearning.com" class="footer-social-btn" title="Email">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+          <div class="footer-contact-details">
+            <div>JIA Learning · +62 851-9690-6349</div>
+            <div>@jialearning</div>
+            <div>Senin–Minggu, 08.00–20.00 WIB</div>
+          </div>
+        </div>
+
+        <!-- Col 2: Program -->
+        <div>
+          <h4 class="footer-column-title">PROGRAM</h4>
+          <ul class="footer-nav-list">
+            <li><a href="program.html">TKA Starter Class</a></li>
+            <li><a href="program.html">E-Planner</a></li>
+            <li><a href="program.html">Buku Amazing TKA</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Perusahaan -->
+        <div>
+          <h4 class="footer-column-title">PERUSAHAAN</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Tentang Kami</a></li>
+            <li><a href="mentor.html">Mentor</a></li>
+            <li><a href="testimoni.html">Testimoni</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Bantuan -->
+        <div>
+          <h4 class="footer-column-title">BANTUAN</h4>
+          <ul class="footer-nav-list">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="https://wa.me/6285196906349" target="_blank">WhatsApp Komunitas</a></li>
+            <li><a href="program.html">Platform Ujian (JIA Exam)</a></li>
+            <li><a href="program.html">Beli Buku Amazing TKA</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="footer-bottom-divider">
+
+      <div class="footer-bottom-bar">
+        <div>© 2026 JIA Learning. All rights reserved.</div>
+        <div>Kabupaten Banyuwangi, Jawa Timur, Indonesia</div>
+        <div><a href="mailto:azzam@jialearning.com">azzam@jialearning.com</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Page Switcher Dock -->
+  <div class="page-switch-dock">
+    <span class="dock-label">Halaman Desain:</span>
+    <a href="index.html" class="dock-link">1. Beranda</a>
+    <a href="program.html" class="dock-link active">2. Program</a>
+    <a href="mentor.html" class="dock-link">3. Mentor</a>
+    <a href="testimoni.html" class="dock-link">4. Testimoni</a>
+    <a href="faq.html" class="dock-link">5. FAQ</a>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

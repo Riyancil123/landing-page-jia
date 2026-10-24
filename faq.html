@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pertanyaan yang Sering Ditanyakan (FAQ) - JIA Learning</title>
+  <meta name="description" content="Temukan jawaban lengkap seputar program belajar TKA SMP/MTs, simulasi CBT, modul buku cetak, dan bimbingan mentor juara di JIA Learning.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">J</div>
+        <div class="brand-text-wrap">
+          <div class="brand-title">JIA <span>Learning</span></div>
+          <div class="brand-subtitle">Bimbingan Belajar TKA SMP/MTs</div>
+        </div>
+      </a>
+
+      <!-- Floating Nav Pills -->
+      <nav class="nav-pill-container" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Beranda</a>
+        <a href="program.html" class="nav-link">Program</a>
+        <a href="mentor.html" class="nav-link">Mentor</a>
+        <a href="testimoni.html" class="nav-link">Testimoni</a>
+        <a href="faq.html" class="nav-link active">FAQ</a>
+      </nav>
+
+      <!-- Right Actions -->
+      <div class="header-actions">
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20JIA%2C%20saya%20punya%20pertanyaan%20seputar%20bimbingan" target="_blank" class="btn btn-header-cta">
+          Daftar Sekarang &rsaquo;
+        </a>
+        <div class="user-avatar-btn" title="Akun Siswa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </div>
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Open Menu">☰</button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-menu-drawer" id="mobileDrawer">
+      <a href="index.html" class="mobile-nav-link">Beranda</a>
+      <a href="program.html" class="mobile-nav-link">Program Belajar</a>
+      <a href="mentor.html" class="mobile-nav-link">Mentor Juara</a>
+      <a href="testimoni.html" class="mobile-nav-link">Testimoni Siswa & Orang Tua</a>
+      <a href="faq.html" class="mobile-nav-link active">FAQ & Pusat Bantuan</a>
+      <a href="https://wa.me/6281234567890" class="btn btn-primary" style="margin-top: 10px;">Daftar Sekarang</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" style="padding-bottom: 30px;">
+    <div class="hero-glow-bg"></div>
+    <div class="container">
+      <div style="max-width: 760px;">
+        <div class="badge-soft" style="margin-bottom: 16px;">
+          <span>❓</span> PUSAT BANTUAN RESMI JIA LEARNING
+        </div>
+        <h1 class="hero-title" style="margin-bottom: 14px;">
+          Pertanyaan yang Sering Ditanyakan<br>
+          (FAQ)
+        </h1>
+        <p class="hero-subtitle">
+          Temukan jawaban seputar program belajar, simulasi CBT, jadwal bimbingan, hingga fasilitas modul dan garansi kelulusan yang disediakan oleh JIA Learning.
+        </p>
+
+        <!-- Live Search Box -->
+        <div class="faq-search-box">
+          <span style="font-size: 1.1rem; color: #8E8699; margin-right: 10px;">🔍</span>
+          <input type="text" id="faqSearchInput" class="faq-search-input" placeholder="Ketik kata kunci (misal: simulasi CBT, cara daftar, jadwal mentoring)...">
+          <button class="faq-search-btn">Cari Solusi</button>
+        </div>
+
+        <div style="font-size: 0.78rem; color: var(--text-muted); margin-top: 12px;">
+          Paling sering dicari: <span style="color: var(--color-primary); font-weight: 700; cursor: pointer;">Try Out CBT</span>, <span style="color: var(--color-primary); font-weight: 700; cursor: pointer;">Garansi Kelulusan</span>, <span style="color: var(--color-primary); font-weight: 700; cursor: pointer;">Modul Fisik</span>, <span style="color: var(--color-primary); font-weight: 700; cursor: pointer;">Grup WA</span>
+        </div>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-tabs-bar" data-target-group="faq-items" style="margin-top: 30px;">
+        <button class="filter-tab active" data-filter="all">Semua Topik</button>
+        <button class="filter-tab" data-filter="paket">Pendaftaran & Paket</button>
+        <button class="filter-tab" data-filter="cbt">Simulasi Tryout CBT</button>
+        <button class="filter-tab" data-filter="modul">Buku Fisik & E-Planner</button>
+        <button class="filter-tab" data-filter="mentor">Metode & Mentor</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Two Column Layout: FAQ Accordion + Sidebar -->
+  <section class="section-pilar" style="padding-top: 10px;">
+    <div class="container faq-layout-grid">
+      <!-- Left Column: Accordion Items -->
+      <div class="accordion-list" id="faqAccordionList">
+        <!-- Q1 -->
+        <div class="accordion-item active" data-group="faq-items" data-category="paket">
+          <div class="accordion-header">
+            <div class="accordion-question-wrap">
+              <span class="accordion-num">01</span>
+              <span class="accordion-question">Apa saja yang didapatkan di program TKA Master Class?</span>
+            </div>
+            <div class="accordion-icon-toggle">+</div>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-answer">
+              Siswa mendapatkan modul materi digital & cetak lengkap, akses simulasi CBT 1 tahun, 40+ sesi kelas live intensif, bank 2.500+ soal HOTS berstandar seleksi SMA Unggulan, serta grup pendampingan harian 24/7 bersama mentor juara kompetisi nasional.
+            </div>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="accordion-item" data-group="faq-items" data-category="cbt">
+          <div class="accordion-header">
+            <div class="accordion-question-wrap">
+              <span class="accordion-num">02</span>
+              <span class="accordion-question">Apakah simulasi CBT bisa diakses di smartphone / HP?</span>
+            </div>
+            <div class="accordion-icon-toggle">+</div>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-answer">
+              Ya, 100% responsif! Sistem CBT JIA Learning didesain adaptif dan ringan. Siswa dapat mengakses ujian baik melalui laptop/PC, tablet iPad/Android, maupun smartphone dengan antarmuka yang nyaman dan anti-lag.
+            </div>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="accordion-item" data-group="faq-items" data-category="paket">
+          <div class="accordion-header">
+            <div class="accordion-question-wrap">
+              <span class="accordion-num">03</span>
+              <span class="accordion-question">Bagaimana cara mendaftar dan mulai belajar di JIA Learning?</span>
+            </div>
+            <div class="accordion-icon-toggle">+</div>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-answer">
+              Cukup klik tombol "Daftar Sekarang", pilih paket bimbingan yang diinginkan, lakukan verifikasi pembayaran via QRIS/Transfer Bank/E-Wallet, dan akun belajar kamu akan aktif secara otomatis dalam hitungan menit. Admin kami juga akan menghubungi untuk memasukkan siswa ke grup bimbingan VIP.
+            </div>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="accordion-item" data-group="faq-items" data-category="mentor">
+          <div class="accordion-header">
+            <div class="accordion-question-wrap">
+              <span class="accordion-num">04</span>
+              <span class="accordion-question">Apakah ada sesi latihan soal live dan interaktif bersama mentor juara?</span>
+            </div>
+            <div class="accordion-icon-toggle">+</div>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-answer">
+              Tentu ada! Setiap pekan terdapat sesi live streaming interaktif untuk membedah soal-soal tersulit. Siswa bisa bertanya langsung secara dua arah via mikrofon atau kolom chat dan mendapatkan penjabaran runtut dari Kak Azzam, Kak Jingga, dan tim pengajar lainnya.
+            </div>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="accordion-item" data-group="faq-items" data-category="cbt">
+          <div class="accordion-header">
+            <div class="accordion-question-wrap">
+              <span class="accordion-num">05</span>
+              <span class="accordion-question">Berapa lama akses modul dan tryout simulasi CBT yang saya dapatkan?</span>
+            </div>
+            <div class="accordion-icon-toggle">+</div>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-answer">
+              Seluruh peserta mendapatkan masa aktif akses akun hingga hari pelaksanaan tes seleksi TKA SMP/MTs 2027 selesai (minimal 12 bulan penuh) tanpa ada biaya perpanjangan atau langganan tersembunyi.
+            </div>
+          </div>
+        </div>
+
+        <!-- Q6 -->
+        <div class="accordion-item" data-group="faq-items" data-category="modul">
+          <div class="accordion-header">
+            <div class="accordion-question-wrap">
+              <span class="accordion-num">06</span>
+              <span class="accordion-question">Apakah buku fisik Amazing TKA dikirim langsung ke alamat rumah?</span>
+            </div>
+            <div class="accordion-icon-toggle">+</div>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-answer">
+              Ya, untuk paket yang mencakup modul fisik, buku akan langsung dikirim ke alamat rumah kamu dengan nomor resi terverifikasi dan packing bubble wrap tebal anti rusak ke seluruh wilayah Indonesia melalui ekspedisi terpercaya (JNE/SiCepat/J&T).
+            </div>
+          </div>
+        </div>
+
+        <!-- Q7 -->
+        <div class="accordion-item" data-group="faq-items" data-category="mentor">
+          <div class="accordion-header">
+            <div class="accordion-question-wrap">
+              <span class="accordion-num">07</span>
+              <span class="accordion-question">Berapa persen tingkat keberhasilan siswa JIA lolos ke SMA favorit?</span>
+            </div>
+            <div class="accordion-icon-toggle">+</div>
+          </div>
+          <div class="accordion-body">
+            <div class="accordion-answer">
+              Pada angkatan tahun lalu (2026), sebanyak 94.8% siswa bimbingan JIA Learning berhasil menembus SMA unggulan pilihan mereka, seperti SMA Pradita Dirgantara, Taruna Nusantara, SMAN MH Thamrin, SMAN 3 Bandung, SMA Unggul DEL, dan SMA Unggulan lainnya.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Sidebar Help Cards -->
+      <aside class="faq-sidebar">
+        <!-- Contact Card -->
+        <div class="faq-help-card">
+          <div class="faq-help-icon">🎧</div>
+          <h3 class="faq-help-title">Masih Punya Pertanyaan?</h3>
+          <p class="faq-help-desc">
+            Jika pertanyaanmu belum terjawab di sini, tim konsultan pendidikan JIA siap membantu menjawab seluruh rasa penasaranmu secara personal.
+          </p>
+
+          <div class="faq-help-info-pill">
+            <div>Waktu Konsultasi Aktif:</div>
+            <strong>Senin - Minggu (08.00 - 21.00 WIB)</strong>
+          </div>
+
+          <a href="https://wa.me/6281234567890?text=Halo%20Admin%20JIA%2C%20saya%20ingin%20tanya%20seputar%20bimbingan%20TKA" target="_blank" class="btn btn-primary" style="width: 100%; padding: 12px 18px;">
+            💬 Chat via WhatsApp Admin
+          </a>
+
+          <div style="font-size: 0.72rem; color: var(--text-light); text-align: center; margin-top: 10px;">
+            Konsultasi 100% Gratis & Ramah
+          </div>
+        </div>
+
+        <!-- Demo CBT Card -->
+        <div class="faq-demo-cbt-card">
+          <div style="font-size: 1.4rem; margin-bottom: 8px;">💻</div>
+          <h4 class="demo-cbt-title">Panduan Ujian Try Out CBT</h4>
+          <p class="demo-cbt-desc">
+            Ingin mencoba antarmuka sistem Computer Based Test kami sebelum mendaftar bimbingan lengkap?
+          </p>
+          <a href="index.html" class="btn btn-white" style="font-size: 0.8rem; padding: 8px 16px; width: 100%;">
+            Coba Demo Tes CBT Gratis &rarr;
+          </a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Site Footer (Exact Match with Reference Image) -->
+  <footer class="site-footer" style="margin-top: 0;">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Col -->
+        <div class="footer-brand-col">
+          <div class="footer-logo-card">
+            <img src="assets/images/jia_logo.png" alt="JIA LEARNING">
+          </div>
+          <p class="footer-tagline">
+            Pendamping belajar yang serius untuk hasil TKA yang nyata.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://instagram.com/jialearning" target="_blank" class="footer-social-btn" title="Instagram">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://youtube.com/@jialearning" target="_blank" class="footer-social-btn" title="YouTube">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+            <a href="https://wa.me/6285196906349" target="_blank" class="footer-social-btn" title="WhatsApp">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </a>
+            <a href="mailto:azzam@jialearning.com" class="footer-social-btn" title="Email">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+          <div class="footer-contact-details">
+            <div>JIA Learning · +62 851-9690-6349</div>
+            <div>@jialearning</div>
+            <div>Senin–Minggu, 08.00–20.00 WIB</div>
+          </div>
+        </div>
+
+        <!-- Col 2: Program -->
+        <div>
+          <h4 class="footer-column-title">PROGRAM</h4>
+          <ul class="footer-nav-list">
+            <li><a href="program.html">TKA Starter Class</a></li>
+            <li><a href="program.html">E-Planner</a></li>
+            <li><a href="program.html">Buku Amazing TKA</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Perusahaan -->
+        <div>
+          <h4 class="footer-column-title">PERUSAHAAN</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Tentang Kami</a></li>
+            <li><a href="mentor.html">Mentor</a></li>
+            <li><a href="testimoni.html">Testimoni</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Bantuan -->
+        <div>
+          <h4 class="footer-column-title">BANTUAN</h4>
+          <ul class="footer-nav-list">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="https://wa.me/6285196906349" target="_blank">WhatsApp Komunitas</a></li>
+            <li><a href="program.html">Platform Ujian (JIA Exam)</a></li>
+            <li><a href="program.html">Beli Buku Amazing TKA</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="footer-bottom-divider">
+
+      <div class="footer-bottom-bar">
+        <div>© 2026 JIA Learning. All rights reserved.</div>
+        <div>Kabupaten Banyuwangi, Jawa Timur, Indonesia</div>
+        <div><a href="mailto:azzam@jialearning.com">azzam@jialearning.com</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Page Switcher Dock -->
+  <div class="page-switch-dock">
+    <span class="dock-label">Halaman Desain:</span>
+    <a href="index.html" class="dock-link">1. Beranda</a>
+    <a href="program.html" class="dock-link">2. Program</a>
+    <a href="mentor.html" class="dock-link">3. Mentor</a>
+    <a href="testimoni.html" class="dock-link">4. Testimoni</a>
+    <a href="faq.html" class="dock-link active">5. FAQ</a>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

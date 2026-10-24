@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JIA Learning - Tembus SMA Impian Tanpa Bingung Hafalan Rumus</title>
+  <meta name="description" content="Bimbingan intensif persiapan TKA SMP/MTs menuju SMA unggulan. Materi terstruktur, latihan soal HOTS, dan simulasi CBT adaptif berbasis kurikulum terbaru.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container navbar">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" id="headerLogo">
+        <div class="brand-icon">J</div>
+        <div class="brand-text-wrap">
+          <div class="brand-title">JIA <span>Learning</span></div>
+          <div class="brand-subtitle">Bimbingan Belajar TKA SMP/MTs</div>
+        </div>
+      </a>
+
+      <!-- Floating Nav Pills -->
+      <nav class="nav-pill-container" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link active">Beranda</a>
+        <a href="program.html" class="nav-link">Program</a>
+        <a href="mentor.html" class="nav-link">Mentor</a>
+        <a href="testimoni.html" class="nav-link">Testimoni</a>
+        <a href="faq.html" class="nav-link">FAQ</a>
+      </nav>
+
+      <!-- Right Actions -->
+      <div class="header-actions">
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20JIA%2C%20saya%20ingin%20daftar%20program%20TKA%202027" target="_blank" class="btn btn-header-cta" id="ctaHeaderBtn">
+          Daftar Sekarang &rsaquo;
+        </a>
+        <div class="user-avatar-btn" title="Akun Siswa">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </div>
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Open Menu">☰</button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-menu-drawer" id="mobileDrawer">
+      <a href="index.html" class="mobile-nav-link active">Beranda</a>
+      <a href="program.html" class="mobile-nav-link">Program Belajar</a>
+      <a href="mentor.html" class="mobile-nav-link">Mentor Juara</a>
+      <a href="testimoni.html" class="mobile-nav-link">Testimoni Siswa & Orang Tua</a>
+      <a href="faq.html" class="mobile-nav-link">FAQ & Pusat Bantuan</a>
+      <a href="https://wa.me/6281234567890?text=Halo%20Admin%20JIA%20Learning" class="btn btn-primary" style="margin-top: 10px;">Daftar Sekarang</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-glow-bg"></div>
+    <div class="hero-glow-purple"></div>
+    <div class="container hero-grid">
+      <!-- Hero Left Content -->
+      <div class="hero-content">
+        <div class="badge-soft">
+          <span>⭐</span> Bimbingan Belajar Persiapan TKA SMP/MTs Terbaik
+        </div>
+
+        <h1 class="hero-title">
+          Tembus SMA Impian<br>
+          <span class="text-orange">Tanpa Bingung</span><br>
+          Hafalan Rumus.
+        </h1>
+
+        <p class="hero-subtitle">
+          Bimbingan intensif persiapan TKA SMP/MTs menuju SMA unggulan. Materi terstruktur, latihan soal HOTS, dan simulasi CBT adaptif berbasis kurikulum terbaru.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="program.html" class="btn btn-primary" id="heroCtaPrimary">
+            Daftar Try Out CBT Gratis &rarr;
+          </a>
+          <a href="mentor.html" class="btn btn-secondary" id="heroCtaSecondary">
+            <span style="color: #EF4444; font-size: 0.9rem;">▶</span> Lihat Program Belajar &rsaquo;
+          </a>
+        </div>
+
+        <div class="hero-trust-proof">
+          <div class="proof-row">
+            <div class="avatar-stack">
+              <img src="assets/images/mentor_azzam.jpg" alt="Siswa JIA 1">
+              <img src="assets/images/mentor_jingga.jpg" alt="Siswa JIA 2">
+              <img src="assets/images/mentor_nabila.jpg" alt="Siswa JIA 3">
+              <div class="stack-avatar">+850</div>
+            </div>
+            <div class="proof-text">
+              <strong>Rating 4.9/5.0</strong> dari 850+ Siswa SMP/MTs se-Indonesia
+            </div>
+          </div>
+          <div class="proof-badge-guarantee">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            Garansi Pemahaman Konsep 100% & Pendampingan Mentor Juara
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Right: Interactive Mockup Card -->
+      <div class="cbt-mockup-card" id="heroInteractiveCard">
+        <div class="cbt-window-bar">
+          <div class="window-dots">
+            <span class="dot-red"></span>
+            <span class="dot-yellow"></span>
+            <span class="dot-green"></span>
+          </div>
+          <div class="cbt-status-pill">● CBT TKA Adaptif Aktif</div>
+        </div>
+
+        <div class="cbt-tabs">
+          <button class="cbt-tab-btn active" data-tab="jadwal">📅 Jadwal</button>
+          <button class="cbt-tab-btn" data-tab="analisis">📊 Analisis</button>
+          <button class="cbt-tab-btn" data-tab="soal">📝 Soal HOTS</button>
+          <button class="cbt-tab-btn" data-tab="profil">👤 Profil</button>
+        </div>
+
+        <div class="cbt-test-box">
+          <div class="cbt-test-header">
+            <div>
+              <div style="font-size: 0.68rem; font-weight: 800; text-transform: uppercase; color: #8E8699; letter-spacing: 0.05em;">Simulasi CBT SMA Unggulan</div>
+              <h3 class="cbt-test-title">Try Out Akbar TKA Seri 1 - 2027</h3>
+            </div>
+            <div class="cbt-timer-badge">
+              <span>⏱</span> <span id="cbtTimer">42:15</span>
+            </div>
+          </div>
+
+          <div class="cbt-tags">
+            <span class="cbt-tag">Matematika</span>
+            <span class="cbt-tag">Penalaran IPA</span>
+            <span class="cbt-tag">Literasi Bhs</span>
+          </div>
+
+          <div class="cbt-progress-row">
+            <div class="cbt-score-target">
+              Target Nilai: <strong>850+ Poin</strong>
+            </div>
+            <a href="program.html" class="btn cbt-btn-start">Mulai Ujian &rsaquo;</a>
+          </div>
+        </div>
+
+        <div class="cbt-promo-banner">
+          <div>
+            <div class="promo-title">🎁 Bonus Spesial Paket Belajar</div>
+            <div class="promo-sub">Bank 1.500+ Soal HOTS & Video Bedah Soal</div>
+          </div>
+          <a href="program.html" class="btn promo-btn">Klaim Bonus</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Tiga Pilar Utama Kesiapan TKA -->
+  <section class="section-pilar">
+    <div class="container">
+      <div class="section-header-split">
+        <div class="section-head-text">
+          <div class="section-tag">METODE BELAJAR EFEKTIF</div>
+          <h2 class="section-title">Tiga Pilar Utama Kesiapan TKA</h2>
+          <p class="section-desc">
+            Kurikulum terstruktur yang dirancang khusus untuk memastikan pemahaman konsep mendalam, bukan sekadar hafalan rumus cepat.
+          </p>
+        </div>
+        <div class="stats-badges-container">
+          <div class="stat-pill-item">100+ Video Materi</div>
+          <div class="stat-pill-divider"></div>
+          <div class="stat-pill-item">2500+ Bank Soal</div>
+          <div class="stat-pill-divider"></div>
+          <div class="stat-pill-item">12x Try Out Real CBT</div>
+        </div>
+      </div>
+
+      <div class="pilar-cards-grid">
+        <!-- Card 01 -->
+        <div class="pilar-card">
+          <div class="pilar-card-top">
+            <div class="pilar-num">01</div>
+            <div class="pilar-icon-wrap">💡</div>
+          </div>
+          <div>
+            <h3 class="pilar-title">Fondasi Konsep Fundamental</h3>
+            <p class="pilar-desc">
+              Pahami akar konsep setiap rumus matematika & penalaran IPA. Kamu akan mampu memecahkan variasi soal serumit apa pun tanpa panik.
+            </p>
+          </div>
+          <a href="program.html" class="pilar-link">
+            <span>Pelajari Modul Dasar</span>
+            <span>↗</span>
+          </a>
+        </div>
+
+        <!-- Card 02 -->
+        <div class="pilar-card card-purple">
+          <div class="pilar-card-top">
+            <div class="pilar-num">02</div>
+            <div class="pilar-icon-wrap">⚡</div>
+          </div>
+          <div>
+            <h3 class="pilar-title">Strategi Belajar Taktis</h3>
+            <p class="pilar-desc">
+              Manajemen waktu pengerjaan 90 detik per butir, teknik eliminasi jawaban jebakan, dan pemetaan tingkat kesulitan soal HOTS seleksi.
+            </p>
+          </div>
+          <a href="program.html" class="pilar-link">
+            <span>Cek Strategi Belajar</span>
+            <span>↗</span>
+          </a>
+        </div>
+
+        <!-- Card 03 -->
+        <div class="pilar-card">
+          <div class="pilar-card-top">
+            <div class="pilar-num">03</div>
+            <div class="pilar-icon-wrap">🎯</div>
+          </div>
+          <div>
+            <h3 class="pilar-title">Uji Coba TKA & CBT Akurat</h3>
+            <p class="pilar-desc">
+              Simulasi ujian dengan sistem, durasi, dan tingkat kesulitan 100% mirip dengan Computer Based Test seleksi SMA Favorit sesungguhnya.
+            </p>
+            <div class="pilar-mini-chart">
+              <div class="chart-header">
+                <span>Perkembangan Skor CBT Siswa</span>
+                <span class="text-orange">+185 Poin</span>
+              </div>
+              <div class="chart-bars">
+                <div class="chart-bar" style="height: 35%;"></div>
+                <div class="chart-bar" style="height: 48%;"></div>
+                <div class="chart-bar" style="height: 60%;"></div>
+                <div class="chart-bar active" style="height: 78%;"></div>
+                <div class="chart-bar highlight" style="height: 95%;"></div>
+              </div>
+            </div>
+          </div>
+          <a href="program.html" class="pilar-link">
+            <span>Coba Simulasi CBT</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Ekosistem Belajar Lengkap & Terstruktur -->
+  <section class="section-ekosistem">
+    <div class="container">
+      <div class="section-header-center">
+        <div class="section-tag">PAKET PENDUKUNG LENGKAP 2027</div>
+        <h2 class="section-title">Ekosistem Belajar Lengkap & Terstruktur</h2>
+        <p class="section-desc">
+          Semua materi, modul latihan, buku panduan, dan simulasi CBT terintegrasi dalam satu sistem belajar mandiri yang fleksibel dan terarah.
+        </p>
+      </div>
+
+      <div class="ekosistem-grid">
+        <!-- E-Planner Card -->
+        <div class="ekosistem-card">
+          <div>
+            <div class="card-top-tags">
+              <span class="badge-pill-tag purple">MODUL DIGITAL INTERAKTIF</span>
+              <span class="subtag">Akses Seumur Hidup</span>
+            </div>
+            <h3 class="ekosistem-title">E-Planner Sukses Mandiri TKA SMP/MTs</h3>
+            <p class="ekosistem-desc">
+              Lembar kerja digital interaktif untuk menyusun target belajar harian, melacak perkembangan penguasaan bab, dan evaluasi berkala hasil try out.
+            </p>
+
+            <ul class="check-list">
+              <li class="check-item">
+                <span class="check-icon">✓</span>
+                <span>Jadwal belajar otomatis disesuaikan dengan sisa waktu ujian</span>
+              </li>
+              <li class="check-item">
+                <span class="check-icon">✓</span>
+                <span>Tracker kelemahan bab matematika & sains secara otomatis</span>
+              </li>
+              <li class="check-item">
+                <span class="check-icon">✓</span>
+                <span>Template evaluasi kesalahan soal per sesi latihan</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="ekosistem-card-footer">
+            <div class="footer-item-info">
+              <div style="width: 38px; height: 38px; background: #EFE4F5; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
+                📱
+              </div>
+              <div>
+                <div class="footer-text-name">E-Planner Sukses Mandiri</div>
+                <div class="footer-text-meta">Versi Digital PDF + Notion Interactive</div>
+              </div>
+            </div>
+            <a href="program.html" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.8rem;">
+              Unduh E-Planner &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Buku Amazing TKA Card -->
+        <div class="ekosistem-card">
+          <div>
+            <div class="card-top-tags">
+              <span class="badge-pill-tag orange">BUKU CETAK EKSKLUSIF</span>
+              <span class="subtag">Dikirim ke Seluruh Indonesia</span>
+            </div>
+            <h3 class="ekosistem-title">Buku Amazing TKA SMP/MTs 2027</h3>
+            <p class="ekosistem-desc">
+              Buku fisik 500+ halaman berisi rangkuman materi lengkap, bedah konsep esensial, trik pengerjaan cepat soal HOTS, dan 5 paket soal prediksi akurat.
+            </p>
+
+            <div class="specs-grid">
+              <div class="spec-box">
+                <div class="spec-box-title">500+ Halaman</div>
+                <div class="spec-box-sub">Kertas Bookpaper Premium</div>
+              </div>
+              <div class="spec-box">
+                <div class="spec-box-title">Kunci & Pembahasan</div>
+                <div class="spec-box-sub">Video QR Code Per Nomor</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ekosistem-card-footer">
+            <div class="footer-item-info">
+              <img src="assets/images/book_amazing_tka.jpg" alt="Buku Amazing TKA" class="footer-thumb">
+              <div>
+                <div class="footer-text-name">Amazing TKA 2027</div>
+                <div class="footer-text-meta">Termasuk Akses Akun CBT Online 1 Thn</div>
+              </div>
+            </div>
+            <a href="program.html" class="btn btn-primary" style="padding: 8px 18px; font-size: 0.82rem;">
+              Beli Buku Fisik
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Coba Nonton Dulu Sebelum Daftar -->
+  <section class="section-video">
+    <div class="container">
+      <div class="section-header-split">
+        <div class="section-head-text">
+          <h2 class="section-title">Coba nonton dulu sebelum daftar.</h2>
+        </div>
+        <p class="section-desc" style="max-width: 440px;">
+          Tonton cuplikan materi & pembahasan simulasi TKA gratis dari mentor juara kami. Rasakan serunya metode belajar konseptual.
+        </p>
+      </div>
+
+      <div class="video-grid">
+        <!-- Video 1 -->
+        <div class="video-card">
+          <div class="video-thumb-container">
+            <img src="assets/images/video_math_tka.jpg" alt="Matematika TKA" class="video-thumb-img">
+            <div class="video-play-btn">▶</div>
+            <div class="video-badge-top">
+              <span class="badge-pill-tag orange">GRATIS</span>
+            </div>
+            <div class="video-duration">14:20</div>
+          </div>
+          <div class="video-card-body">
+            <h4 class="video-card-title">Pola Bilangan & Barisan Aritmatika HOTS</h4>
+            <div class="video-card-mentor">Pemateri: Kak Azzam, S.Si.</div>
+            <div class="video-card-link">
+              <span>Tonton Video Gratis</span> <span>↗</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 2 -->
+        <div class="video-card">
+          <div class="video-thumb-container">
+            <img src="assets/images/mentor_jingga.jpg" alt="Sains IPA" class="video-thumb-img">
+            <div class="video-play-btn">▶</div>
+            <div class="video-badge-top">
+              <span class="badge-pill-tag orange">POPULER</span>
+            </div>
+            <div class="video-duration">18:45</div>
+          </div>
+          <div class="video-card-body">
+            <h4 class="video-card-title">Trik 30 Detik Soal Gaya & Gerak Newton</h4>
+            <div class="video-card-mentor">Pemateri: Kak Jingga, M.Pd.</div>
+            <div class="video-card-link">
+              <span>Tonton Video Gratis</span> <span>↗</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video 3 -->
+        <div class="video-card">
+          <div class="video-thumb-container">
+            <img src="assets/images/mentor_nabila.jpg" alt="Bahasa Indonesia" class="video-thumb-img">
+            <div class="video-play-btn">▶</div>
+            <div class="video-badge-top">
+              <span class="badge-pill-tag purple">BEDAH SOAL</span>
+            </div>
+            <div class="video-duration">12:10</div>
+          </div>
+          <div class="video-card-body">
+            <h4 class="video-card-title">Analisis Paragraf Kritis & Makna Tersirat</h4>
+            <div class="video-card-mentor">Pemateri: Kak Nabila, S.Hum.</div>
+            <div class="video-card-link">
+              <span>Tonton Video Gratis</span> <span>↗</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Ingin Mengenal JIA Learning Lebih Dekat? (Dark Card) -->
+  <section class="section-dark-banner">
+    <div class="container">
+      <div class="dark-banner-card">
+        <div class="dark-banner-header">
+          <div class="dark-banner-head-text">
+            <div class="dark-banner-tag">KONSULTASI & KOMUNITAS PEJUANG</div>
+            <h2 class="dark-banner-title">Ingin Mengenal JIA Learning Lebih Dekat?</h2>
+            <p class="dark-banner-subtitle">
+              Bergabunglah bersama ribuan siswa pejuang SMA Unggulan lainnya dan dapatkan akses bimbingan eksklusif dari para mentor juara kompetisi nasional.
+            </p>
+          </div>
+          <a href="https://t.me/" target="_blank" class="btn btn-ghost-white">
+            Gabung Komunitas Pejuang &rsaquo;
+          </a>
+        </div>
+
+        <div class="dark-banner-grid">
+          <div class="dark-feature-box">
+            <div class="dark-feature-icon">💬</div>
+            <h3 class="dark-feature-title">Ruang Tanya Mentor</h3>
+            <p class="dark-feature-desc">
+              Diskusi bebas kapan saja tanpa rasa takut atau malu jika belum paham konsep suatu materi.
+            </p>
+            <a href="mentor.html" class="dark-feature-link">Tanya Mentor Sekarang &rarr;</a>
+          </div>
+
+          <div class="dark-feature-box box-white">
+            <div class="dark-feature-icon">📄</div>
+            <h3 class="dark-feature-title">Modul & Bank Soal Gratis</h3>
+            <p class="dark-feature-desc">
+              Unduh rangkuman materi ringkas dan puluhan contoh soal latihan mingguan berstandar HOTS.
+            </p>
+            <a href="program.html" class="dark-feature-link" style="color: #FFFFFF;">Unduh Materi Gratis &rarr;</a>
+          </div>
+
+          <div class="dark-feature-box">
+            <div class="dark-feature-icon">🎓</div>
+            <h3 class="dark-feature-title">Webinar Strategi TKA</h3>
+            <p class="dark-feature-desc">
+              Sesi live rutin membahas perkembangan tipe soal terbaru seleksi SMA unggulan se-Indonesia.
+            </p>
+            <a href="program.html" class="dark-feature-link">Daftar Webinar Gratis &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 6: Consultation Callout Strip -->
+  <section class="section-consultation-strip">
+    <div class="container">
+      <div class="consultation-card">
+        <div class="consultation-left">
+          <div class="consultation-icon">🎧</div>
+          <div>
+            <div style="font-size: 0.72rem; font-weight: 800; text-transform: uppercase; color: #C05600; letter-spacing: 0.06em; margin-bottom: 2px;">KONSULTASI AKADEMIK</div>
+            <h3 class="consultation-title">Masih Ragu Memilih Program Persiapan TKA untuk Anak Anda?</h3>
+            <p class="consultation-desc">
+              Tim konsultan akademik JIA siap membantu memetakan kemampuan awal siswa, memberikan rekomendasi paket belajar terbaik, dan menjelaskan alur seleksi TKA.
+            </p>
+          </div>
+        </div>
+        <a href="https://wa.me/6281234567890?text=Halo%20Admin%20JIA%2C%20saya%20ingin%20konsultasi%20pemilihan%20paket%20belajar%20TKA" target="_blank" class="btn btn-primary" style="padding: 12px 26px;">
+          Konsultasi Gratis via WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer (Exact Match with Reference Image) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Col -->
+        <div class="footer-brand-col">
+          <div class="footer-logo-card">
+            <img src="assets/images/jia_logo.png" alt="JIA LEARNING">
+          </div>
+          <p class="footer-tagline">
+            Pendamping belajar yang serius untuk hasil TKA yang nyata.
+          </p>
+          <div class="footer-social-row">
+            <a href="https://instagram.com/jialearning" target="_blank" class="footer-social-btn" title="Instagram">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://youtube.com/@jialearning" target="_blank" class="footer-social-btn" title="YouTube">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+            <a href="https://wa.me/6285196906349" target="_blank" class="footer-social-btn" title="WhatsApp">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </a>
+            <a href="mailto:azzam@jialearning.com" class="footer-social-btn" title="Email">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+          <div class="footer-contact-details">
+            <div>JIA Learning · +62 851-9690-6349</div>
+            <div>@jialearning</div>
+            <div>Senin–Minggu, 08.00–20.00 WIB</div>
+          </div>
+        </div>
+
+        <!-- Col 2: Program -->
+        <div>
+          <h4 class="footer-column-title">PROGRAM</h4>
+          <ul class="footer-nav-list">
+            <li><a href="program.html">TKA Starter Class</a></li>
+            <li><a href="program.html">E-Planner</a></li>
+            <li><a href="program.html">Buku Amazing TKA</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Perusahaan -->
+        <div>
+          <h4 class="footer-column-title">PERUSAHAAN</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Tentang Kami</a></li>
+            <li><a href="mentor.html">Mentor</a></li>
+            <li><a href="testimoni.html">Testimoni</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Bantuan -->
+        <div>
+          <h4 class="footer-column-title">BANTUAN</h4>
+          <ul class="footer-nav-list">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="https://wa.me/6285196906349" target="_blank">WhatsApp Komunitas</a></li>
+            <li><a href="program.html">Platform Ujian (JIA Exam)</a></li>
+            <li><a href="program.html">Beli Buku Amazing TKA</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="footer-bottom-divider">
+
+      <div class="footer-bottom-bar">
+        <div>© 2026 JIA Learning. All rights reserved.</div>
+        <div>Kabupaten Banyuwangi, Jawa Timur, Indonesia</div>
+        <div><a href="mailto:azzam@jialearning.com">azzam@jialearning.com</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Video Modal Popup -->
+  <div class="video-modal-backdrop" id="videoModal">
+    <div class="video-modal-content">
+      <div class="video-modal-header">
+        <div class="video-modal-title" id="videoModalTitle">Cuplikan Pembelajaran TKA</div>
+        <button class="modal-close-btn" id="modalClose">&times;</button>
+      </div>
+      <div class="video-player-container">
+        <img src="assets/images/video_math_tka.jpg" alt="Video Player Preview" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.9;">
+        <div style="position: absolute; text-align: center; color: #FFFFFF;">
+          <div style="width: 60px; height: 60px; border-radius: 50%; background: #FEA619; color: #230836; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; margin: 0 auto 10px; box-shadow: 0 4px 18px rgba(254, 166, 25, 0.5);">
+            ▶
+          </div>
+          <div style="font-weight: 700; font-size: 0.95rem;">Video Preview Sedang Dimainkan</div>
+          <div style="font-size: 0.8rem; opacity: 0.8;">Klik di luar untuk menutup</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Switcher Dock (Helper Bar) -->
+  <div class="page-switch-dock">
+    <span class="dock-label">Halaman Desain:</span>
+    <a href="index.html" class="dock-link active">1. Beranda</a>
+    <a href="program.html" class="dock-link">2. Program</a>
+    <a href="mentor.html" class="dock-link">3. Mentor</a>
+    <a href="testimoni.html" class="dock-link">4. Testimoni</a>
+    <a href="faq.html" class="dock-link">5. FAQ</a>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
