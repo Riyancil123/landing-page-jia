@@ -4,15 +4,70 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Mobile Menu Toggle
+  // 1. Mobile Menu Toggle with Backdrop & Outside Click
   const mobileToggle = document.getElementById('mobileMenuToggle');
   const mobileDrawer = document.getElementById('mobileDrawer');
+  let drawerBackdrop = document.getElementById('drawerBackdrop');
+
+  if (!drawerBackdrop) {
+    drawerBackdrop = document.createElement('div');
+    drawerBackdrop.id = 'drawerBackdrop';
+    drawerBackdrop.className = 'mobile-drawer-backdrop';
+    document.body.appendChild(drawerBackdrop);
+  }
+
+  function toggleMobileMenu(open) {
+    if (!mobileDrawer) return;
+    const shouldOpen = open !== undefined ? open : !mobileDrawer.classList.contains('open');
+    mobileDrawer.classList.toggle('open', shouldOpen);
+    drawerBackdrop.classList.toggle('open', shouldOpen);
+    if (mobileToggle) mobileToggle.innerHTML = shouldOpen ? '✕' : '☰';
+  }
 
   if (mobileToggle && mobileDrawer) {
-    mobileToggle.addEventListener('click', () => {
-      mobileDrawer.classList.toggle('open');
-      const isOpen = mobileDrawer.classList.contains('open');
-      mobileToggle.innerHTML = isOpen ? '✕' : '☰';
+    mobileToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleMobileMenu();
+    });
+
+    drawerBackdrop.addEventListener('click', () => {
+      toggleMobileMenu(false);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') toggleMobileMenu(false);
+    });
+  }
+
+  // 1b. Mobile Floating Bottom Action Bar Injection (if not already present in HTML)
+  if (!document.querySelector('.mobile-bottom-bar')) {
+    const bottomBar = document.createElement('div');
+    bottomBar.className = 'mobile-bottom-bar';
+    bottomBar.id = 'mobileBottomBar';
+    bottomBar.innerHTML = `
+      <div class="mobile-bottom-inner">
+        <div class="mobile-bottom-info">
+          <span class="mobile-bottom-badge">TRY OUT CBT 2027</span>
+          <span class="mobile-bottom-title">Simulasi Ujian Gratis</span>
+        </div>
+        <a href="program.html" class="btn btn-primary mobile-bottom-cta">
+          Daftar CBT &rsaquo;
+        </a>
+      </div>
+    `;
+    document.body.appendChild(bottomBar);
+  }
+
+  // 1c. Swipe Hint Indicator for Mobile Carousels
+  if (window.innerWidth <= 768) {
+    const swipeTargets = document.querySelectorAll('.pilar-cards-grid, .video-grid, .testimonials-grid, .roadmap-grid, .mentor-grid, .ekosistem-grid');
+    swipeTargets.forEach(target => {
+      if (target && !target.previousElementSibling?.classList?.contains('swipe-hint')) {
+        const hint = document.createElement('div');
+        hint.className = 'swipe-hint';
+        hint.innerHTML = '<span>👉</span> Geser ke samping untuk lihat opsi lain';
+        target.parentNode.insertBefore(hint, target);
+      }
     });
   }
 
